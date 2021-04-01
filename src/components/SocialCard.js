@@ -1,17 +1,18 @@
 import React from 'react'
+import '../components/SocialCard.css'
 
 function SocialCard() {
     return (
-        <div>
-            <UserPhoto />
-            <Post />
-        </div>
+        <div className="social-card">
+                <UserPhoto />
+                <Post />
+            </div>
     )
 }
 
 function UserPhoto() {
     return (
-        <img src="" alt="user photo"></img>
+        <img className="user-photo" src="" alt="photo of user"></img>
     )
 }
 
@@ -37,7 +38,7 @@ function PostHeader() {
 
 function PostBody() {
     return (
-        <div>Here goes post text and images and all post content</div>
+        <div>Here goes post text and images and all post        content and more and more</div>
     )
 }
 
