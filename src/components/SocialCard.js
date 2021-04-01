@@ -1,18 +1,21 @@
 import React from 'react'
 import '../components/SocialCard.css'
+import UserAvatarImage from '../components/user-avatar.jpg'
 
 function SocialCard() {
     return (
         <div className="social-card">
-                <UserPhoto />
+                <UserAvatar />
                 <Post />
             </div>
     )
 }
 
-function UserPhoto() {
+function UserAvatar() {
     return (
-        <img className="user-photo" src="" alt="photo of user"></img>
+        <div className="avatar-container">
+            <img className="user-avatar" src={UserAvatarImage} alt="user avatar"></img>
+        </div>
     )
 }
 
@@ -38,7 +41,13 @@ function PostHeader() {
 
 function PostBody() {
     return (
-        <div>Here goes post text and images and all post        content and more and more</div>
+        <div>🎨Reckon you can turn some boring links into some totally awesome buttons? 🔥
+
+        Give it a go here: 
+        
+        #WeeklyWebDevChallenge 
+        
+        https://bit.ly/3cCGRAM</div>
     )
 }
 
@@ -55,13 +64,13 @@ function PostFooter() {
 
 function PostAuthor() {
     return (
-        <h3>Mr. Whiskerson</h3>
+        <p className="post-author">Mr. Whiskerson<span className="post-author-url"> @mr.whiskerson</span></p>
     )
 }
 
 function PostDate() {
     return (
-        <p>Apr 1</p>
+        <p className="post-date">Apr 1</p>
     )
 }
 
