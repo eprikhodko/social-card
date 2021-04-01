@@ -33,6 +33,7 @@ function PostHeader() {
     return (
         <div className="post-header">
             <PostAuthor />
+            <DotSpacer />
             <PostDate />
             <ButtonMore />
         </div>
@@ -68,6 +69,12 @@ function PostAuthor() {
     )
 }
 
+function DotSpacer() {
+    return (
+        <p className="dot-spacer">·</p>
+    )
+}
+
 function PostDate() {
     return (
         <p className="post-date">Apr 1</p>
@@ -76,7 +83,7 @@ function PostDate() {
 
 function ButtonMore() {
     return (
-        <button type="button">...</button>
+        <button className="button-more" type="button">...</button>
     )
 }
 
