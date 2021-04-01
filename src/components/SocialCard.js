@@ -1,6 +1,7 @@
 import React from 'react'
 import '../components/SocialCard.css'
 import UserAvatarImage from '../components/user-avatar.jpg'
+import ThreeDotsMoreButton from '../components/more-with-three-dots-button.svg'
 
 function SocialCard() {
     return (
@@ -83,7 +84,9 @@ function PostDate() {
 
 function ButtonMore() {
     return (
-        <button className="button-more" type="button">...</button>
+        <img className="three-dots-view-more-button" src={ThreeDotsMoreButton} alt="view more"></img>
+        // <button className="button-more" type="button">...</button>
+        // <p className="button-more">···</p>
     )
 }
 

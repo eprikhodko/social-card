@@ -9,7 +9,7 @@ body {
     box-sizing: border-box;
 }
 
-.post-author, .post-date {
+.post-author, .post-date, .button-more {
     margin: 0;
 }
 
@@ -31,7 +31,8 @@ body {
     margin: 0 .3em;
 }
 
-.button-more {
+.three-dots-view-more-button {
+    max-width: 2%;
     margin-left: auto;
 }
 
@@ -41,17 +42,17 @@ body {
     margin-top: 5em;
 
     display: flex;
-    border: 1px solid magenta;
+    border: 1px solid gray;
 }
 
 
 .post {
-    border: 1px solid green;
+    /* border: 1px solid green; */
     margin: 1em;
 }
 
 .post-header {
-    border: 1px solid coral;
+    /* border: 1px solid coral; */
     display: flex;
 }
 
