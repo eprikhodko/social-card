@@ -55,23 +55,9 @@ article {
     margin: 0 .3em;
 }
 
-.three-dots-view-more-button {
-    margin-left: auto;
-    /* margin-top: .2em; */
-    /* padding-top: .2em; */
-    color: rgb(91, 112, 131);
-    color: red;
-    line-height: 0;
-    
-}
-
-svg {
-    /* display: inline-block; */
-    /* background-color: green; */
-    margin-top: .2em;
-}
-
 .button-three-dots {
+    margin-left: auto;
+    width: 19px;
     fill: rgb(91, 112, 131);
 }
 
