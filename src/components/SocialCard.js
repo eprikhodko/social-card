@@ -1,7 +1,7 @@
 import React from 'react'
 import '../components/SocialCard.css'
 import UserAvatarImage from '../components/user-avatar.jpg'
-import ThreeDotsMoreButton from '../components/three-dots.svg'
+import ScrimbaMerchImage from '../components/scrimba-merch.jfif'
 
 function SocialCard() {
     return (
@@ -52,13 +52,16 @@ function PostHeader() {
 
 function PostBody() {
     return (
-        <div>🎨Reckon you can turn some boring links into some totally awesome buttons? 🔥
-
-        Give it a go here: 
-        
-        #WeeklyWebDevChallenge 
-        
-        https://bit.ly/3cCGRAM</div>
+        <div>
+            <p>🎨Reckon you can turn some boring links into some totally awesome buttons? 🔥</p> 
+            <p>Give it a go here: </p>
+            <p>#WeeklyWebDevChallenge</p>
+            <p>https://bit.ly/3cCGRAM</p>
+            <div className="post-body-image-container">
+                <img className="post-body-image" src={ScrimbaMerchImage} alt="buttons styling"></img>
+            </div>
+            
+        </div>
     )
 }
 
@@ -95,7 +98,7 @@ function ButtonMore() {
     return (
         <div className="three-dots-view-more-button">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
-                 <path fill = "rgb(91, 112, 131)" d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                 <path className="button-three-dots" fill = "rgb(91, 112, 131)" d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
             </svg>
         </div>
         

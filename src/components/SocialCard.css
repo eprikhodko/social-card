@@ -23,6 +23,16 @@ article {
     margin-top: 1em;
 }
 
+.user-avatar {
+    max-width: 50px;
+    border-radius: 100%;
+}
+
+.avatar-container {
+    border-radius: 90%;
+    margin-right: .8em;
+}
+
 .post-author, .post-date, .button-more {
     margin: 0;
 }
@@ -46,7 +56,7 @@ article {
 }
 
 .three-dots-view-more-button {
-    /* margin-left: auto; */
+    margin-left: auto;
     /* margin-top: .2em; */
     /* padding-top: .2em; */
     color: rgb(91, 112, 131);
@@ -55,31 +65,33 @@ article {
     
 }
 
-.three-dots-view-more-button, .post-date {
-    /* border: 1px solid black; */
-}
-
 svg {
     /* display: inline-block; */
     /* background-color: green; */
     margin-top: .2em;
 }
 
-path {
-    fill: red;
+.button-three-dots {
+    fill: rgb(91, 112, 131);
 }
 
 .post-header {
-    border: 1px solid coral;
+    /* border: 1px solid coral; */
     display: flex;
 }
 
-.user-avatar {
-    max-width: 50px;
-    border-radius: 100%;
+.post-body-image-container {
+    max-width: 500px;
+    height: 280px;
+    overflow: hidden;
+    border: 1px solid rgb(196, 207, 214);
+    border-radius: 16px;
+    /* padding: 1em; */
+    /* background-color: red; */
+    margin-bottom: 1em;
 }
 
-.avatar-container {
-    border-radius: 90%;
-    margin-right: .8em;
+.post-body-image {
+    max-width: 100%;
 }
+
