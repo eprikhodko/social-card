@@ -1,14 +1,23 @@
 import React from 'react'
 import '../components/SocialCard.css'
 import UserAvatarImage from '../components/user-avatar.jpg'
-import ThreeDotsMoreButton from '../components/more-with-three-dots-button.svg'
+import ThreeDotsMoreButton from '../components/three-dots.svg'
 
 function SocialCard() {
     return (
         <div className="social-card">
-                <UserAvatar />
-                <Post />
+               <Article />
             </div>
+    )
+}
+
+function Article() {
+    return (
+        <article>
+            <UserAvatar />
+            <Post />
+        </article>
+        
     )
 }
 
@@ -66,7 +75,7 @@ function PostFooter() {
 
 function PostAuthor() {
     return (
-        <p className="post-author">Mr. Whiskerson<span className="post-author-url"> @mr.whiskerson</span></p>
+        <p className="post-author">Mr. Whiskerson<span className="post-author-url"> @mr_whiskerson</span></p>
     )
 }
 
@@ -84,7 +93,13 @@ function PostDate() {
 
 function ButtonMore() {
     return (
-        <img className="three-dots-view-more-button" src={ThreeDotsMoreButton} alt="view more"></img>
+        <div className="three-dots-view-more-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                 <path fill = "rgb(91, 112, 131)" d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+            </svg>
+        </div>
+        
+        // <img className="three-dots-view-more-button" src={ThreeDotsMoreButton} alt="view more"></img>
         // <button className="button-more" type="button">...</button>
         // <p className="button-more">···</p>
     )
