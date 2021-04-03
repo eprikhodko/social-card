@@ -5,12 +5,14 @@ html {
 body {
     font-family: "Segoe UI", sans-serif;
     font-size: 1.5rem;
+    font-weight: 400;
     margin: 0;
     box-sizing: border-box;
+    color: rgb(15, 20, 25);
 }
 
 .social-card {
-    max-width: 600px;
+    max-width: 598px;
     margin: 0 auto;
     margin-top: 5em;
 
@@ -18,19 +20,24 @@ body {
 }
 
 article {
+    /* max-width: 566px; */
     display: flex;
     padding: 0 1em;
     margin-top: 1em;
 }
 
 .user-avatar {
-    max-width: 50px;
+    max-width: 48px;
     border-radius: 100%;
 }
 
 .avatar-container {
     border-radius: 90%;
     margin-right: .8em;
+}
+
+.post {
+    /* max-width: 506px; */
 }
 
 .post-author, .post-date, .button-more {
@@ -61,13 +68,43 @@ article {
     fill: rgb(91, 112, 131);
 }
 
+.post-footer-button {
+    border: 1px solid green;
+    display: flex;
+}
+
+.icon {
+    width: 18px;
+    margin-right: .5em;
+}
+
+.icon-color {
+    fill: rgb(91, 112, 131);
+}
+
+.post-counter {
+    margin: 0;
+    font-size: 1.3rem;
+    color: rgb(91, 112, 131);
+}
+
+.count-color {
+    color: rgb(91, 112, 131);
+}
+
 .post-header {
     /* border: 1px solid coral; */
     display: flex;
 }
 
+.post-footer {
+    display: flex;
+
+    justify-content: space-between;
+}
+
 .post-body-image-container {
-    max-width: 500px;
+    /* max-width: 500px; */
     height: 280px;
     overflow: hidden;
     border: 1px solid rgb(196, 207, 214);

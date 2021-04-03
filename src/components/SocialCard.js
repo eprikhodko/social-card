@@ -1,7 +1,14 @@
 import React from 'react'
 import '../components/SocialCard.css'
 import UserAvatarImage from '../components/user-avatar.jpg'
-import ScrimbaMerchImage from '../components/scrimba-merch.jfif'
+import ScrimbaMerchImage from '../components/images/scrimba-merch.jpg'
+// icons
+import {ReactComponent as IconThreeDots} from '../components/icons/icon-three-dots.svg'
+import {ReactComponent as IconReply} from '../components/icons/icon-reply.svg'
+import {ReactComponent as IconRetweet} from '../components/icons/icon-retweet.svg'
+import {ReactComponent as IconLike} from '../components/icons/icon-like.svg'
+import {ReactComponent as IconShare} from '../components/icons/icon-share.svg'
+
 
 function SocialCard() {
     return (
@@ -53,12 +60,11 @@ function PostHeader() {
 function PostBody() {
     return (
         <div>
-            <p>🎨Reckon you can turn some boring links into some totally awesome buttons? 🔥</p> 
-            <p>Give it a go here: </p>
-            <p>#WeeklyWebDevChallenge</p>
-            <p>https://bit.ly/3cCGRAM</p>
+            <p>Did you know Scrimba has a store 🤫?https://shop.spreadshirt.com/scrimba/</p> 
+            <p>Respond with a *screenshot* of your favourite item and you'll stand a chance to win it 🎉</p>
+            <p>Winner announced at random on Friday!</p>
             <div className="post-body-image-container">
-                <img className="post-body-image" src={ScrimbaMerchImage} alt="buttons styling"></img>
+                <img className="post-body-image" src={ScrimbaMerchImage} alt="scrimba merch"></img>
             </div>
             
         </div>
@@ -67,7 +73,7 @@ function PostBody() {
 
 function PostFooter() {
     return (
-        <div>
+        <div className="post-footer">
             <PostReply />
             <PostRetweet />
             <PostLike />
@@ -97,99 +103,45 @@ function PostDate() {
 function ButtonMore() {
     return (
         <div className="button-three-dots">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi"><g><circle cx="5" cy="12" r="2"></circle><circle cx="12" cy="12" r="2"></circle><circle cx="19" cy="12" r="2"></circle></g></svg>
+            <IconThreeDots />
         </div>
-            
-        
-        
-        // <img className="three-dots-view-more-button" src={ThreeDotsMoreButton} alt="view more"></img>
-        // <button className="button-more" type="button">...</button>
-        // <p className="button-more">···</p>
     )
 }
 
 function PostReply() {
     return (
-        <div>
-            <ButtonReply />
-            <ReplyCount />
+        <div className="post-footer-button">
+            <IconReply className="icon icon-color"/>
+            <p className="post-counter count-color">25</p>
         </div>
     )
 }
 
 function PostRetweet() {
     return (
-        <div>
-            <ButtonRetweet />
-            <RetweetCount />
+        <div className="post-footer-button">
+            <IconRetweet className="icon icon-color"/>
+            <p className="post-counter count-color">6</p>
         </div>
     )
 }
 
 function PostLike() {
     return (
-        <div>
-            <ButtonLike />
-            <LikeCount />
+        <div className="post-footer-button">
+            <IconLike className="icon icon-color"/>
+            <p className="post-counter count-color">24</p>
         </div>
     )
 }
 
 function PostShare() {
     return (
-        <div>
-            <ButtonShare />
-            <ShareCount />
+        <div className="post-footer-button">
+            <IconShare className="icon icon-color"/>
+            <p className="post-counter count-color">5</p>
         </div>
     ) 
-}
-
-function ButtonReply() {
-    return (
-        <button type="button">Reply button</button>
-    )
-}
-
-function ReplyCount() {
-    return (
-        <p>reply count</p>
-    )
-}
-
-function ButtonRetweet() {
-    return (
-        <button type="button">Retweet button</button>
-    )
-}
-
-function RetweetCount() {
-    return (
-        <p>retweet count</p>
-    )
-}
-
-function ButtonLike() {
-    return (
-        <button type="button">Like button</button>
-    )
-}
-
-function LikeCount() {
-    return (
-        <p>Like count</p>
-    )
-}
-
-function ButtonShare() {
-    return (
-        <button type="button">Share button</button>
-    )
-}
-
-function ShareCount() {
-    return (
-        <p>Share count</p>
-    )
 }
 
 export default SocialCard
