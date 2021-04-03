@@ -37,7 +37,7 @@ article {
 }
 
 .post {
-    /* max-width: 506px; */
+    padding-bottom: .8em;
 }
 
 .post-author, .post-date, .button-more {
@@ -69,12 +69,11 @@ article {
 }
 
 .post-footer-button {
-    border: 1px solid green;
     display: flex;
 }
 
 .icon {
-    width: 18px;
+    width: 19px;
     margin-right: .5em;
 }
 
@@ -98,20 +97,17 @@ article {
 }
 
 .post-footer {
+    max-width: 425px;
     display: flex;
-
     justify-content: space-between;
+    margin-top: .8em;
 }
 
 .post-body-image-container {
-    /* max-width: 500px; */
     height: 280px;
     overflow: hidden;
     border: 1px solid rgb(196, 207, 214);
     border-radius: 16px;
-    /* padding: 1em; */
-    /* background-color: red; */
-    margin-bottom: 1em;
 }
 
 .post-body-image {

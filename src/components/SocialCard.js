@@ -139,7 +139,6 @@ function PostShare() {
     return (
         <div className="post-footer-button">
             <IconShare className="icon icon-color"/>
-            <p className="post-counter count-color">5</p>
         </div>
     ) 
 }
