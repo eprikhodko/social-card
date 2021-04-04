@@ -1,29 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
 html {
     font-size: 10px;
 }
 
 body {
-    font-family: "Segoe UI", sans-serif;
-    font-size: 1.5rem;
-    font-weight: 400;
     margin: 0;
-    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 1.5rem;
     color: rgb(15, 20, 25);
+    font-weight: 400;
+    line-height: 20px;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1.2em;
+}
+
+.post-body p:last-of-type {
+    margin-bottom: 0;
 }
 
 .social-card {
     max-width: 598px;
     margin: 0 auto;
     margin-top: 5em;
-
     border: 1px solid #ededed;
 }
 
 article {
-    /* max-width: 566px; */
     display: flex;
     padding: 0 1em;
     margin-top: 1em;
+}
+
+/*  ================
+    Avatar
+    ================ */
+
+.avatar-container {
+    margin-right: .8em;
 }
 
 .user-avatar {
@@ -31,17 +50,26 @@ article {
     border-radius: 100%;
 }
 
-.avatar-container {
-    border-radius: 90%;
-    margin-right: .8em;
-}
+/*  ================
+    Post
+    ================ */
 
 .post {
     padding-bottom: .8em;
 }
 
-.post-author, .post-date, .button-more {
+.post-author, 
+.post-date, 
+.button-more {
     margin: 0;
+}
+
+/*  ================
+    Post Header
+    ================ */
+
+.post-header {
+    display: flex;
 }
 
 .post-author {
@@ -49,13 +77,14 @@ article {
     font-weight: 700;
 }
 
-.post-author-url, .post-date, .dot-spacer {
+.post-author-url, 
+.post-date, 
+.dot-spacer {
     color: #5b7083;
 }
 
 .post-author-url {
     font-weight: 400;
-    color: #5b7083;
 }
 
 .dot-spacer {
@@ -66,6 +95,33 @@ article {
     margin-left: auto;
     width: 19px;
     fill: rgb(91, 112, 131);
+}
+
+/*  ================
+    Post Image
+    ================ */
+
+.post-body-image-container {
+    margin-top: .8em;
+    height: 280px;
+    overflow: hidden;
+    border: 1px solid rgb(196, 207, 214);
+    border-radius: 16px;
+}
+
+.post-body-image {
+    max-width: 100%;
+}
+
+/*  ================
+    Post Footer
+    ================ */
+
+.post-footer {
+    max-width: 425px;
+    margin-top: .8em;
+    display: flex;
+    justify-content: space-between;
 }
 
 .post-footer-button {
@@ -86,31 +142,3 @@ article {
     font-size: 1.3rem;
     color: rgb(91, 112, 131);
 }
-
-.count-color {
-    color: rgb(91, 112, 131);
-}
-
-.post-header {
-    /* border: 1px solid coral; */
-    display: flex;
-}
-
-.post-footer {
-    max-width: 425px;
-    display: flex;
-    justify-content: space-between;
-    margin-top: .8em;
-}
-
-.post-body-image-container {
-    height: 280px;
-    overflow: hidden;
-    border: 1px solid rgb(196, 207, 214);
-    border-radius: 16px;
-}
-
-.post-body-image {
-    max-width: 100%;
-}
-

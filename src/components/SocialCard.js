@@ -1,7 +1,8 @@
 import React from 'react'
 import '../components/SocialCard.css'
-import UserAvatarImage from '../components/user-avatar.jpg'
-import ScrimbaMerchImage from '../components/images/scrimba-merch.jpg'
+// images
+import UserAvatarImage from '../components/images/user-avatar.jpg'
+import ScrimbaMerch from '../components/images/scrimba-merch.jpg'
 // icons
 import {ReactComponent as IconThreeDots} from '../components/icons/icon-three-dots.svg'
 import {ReactComponent as IconReply} from '../components/icons/icon-reply.svg'
@@ -24,7 +25,6 @@ function Article() {
             <UserAvatar />
             <Post />
         </article>
-        
     )
 }
 
@@ -59,14 +59,13 @@ function PostHeader() {
 
 function PostBody() {
     return (
-        <div>
+        <div className="post-body">
             <p>Did you know Scrimba has a store 🤫?https://shop.spreadshirt.com/scrimba/</p> 
             <p>Respond with a *screenshot* of your favourite item and you'll stand a chance to win it 🎉</p>
             <p>Winner announced at random on Friday!</p>
             <div className="post-body-image-container">
-                <img className="post-body-image" src={ScrimbaMerchImage} alt="scrimba merch"></img>
+                <img className="post-body-image" src={ScrimbaMerch} alt="scrimba merch"></img>
             </div>
-            
         </div>
     )
 }
@@ -112,7 +111,7 @@ function PostReply() {
     return (
         <div className="post-footer-button">
             <IconReply className="icon icon-color"/>
-            <p className="post-counter count-color">25</p>
+            <p className="post-counter">25</p>
         </div>
     )
 }
@@ -121,7 +120,7 @@ function PostRetweet() {
     return (
         <div className="post-footer-button">
             <IconRetweet className="icon icon-color"/>
-            <p className="post-counter count-color">6</p>
+            <p className="post-counter">6</p>
         </div>
     )
 }
@@ -130,7 +129,7 @@ function PostLike() {
     return (
         <div className="post-footer-button">
             <IconLike className="icon icon-color"/>
-            <p className="post-counter count-color">24</p>
+            <p className="post-counter">24</p>
         </div>
     )
 }
