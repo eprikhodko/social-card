@@ -83,7 +83,7 @@ function PostFooter() {
 
 function PostAuthor() {
     return (
-        <p className="post-author">Mr. Whiskerson<span className="post-author-url"> @mr_whiskerson</span></p>
+        <p className="post-author"><span className="post-author-name">Mr. Whiskerson</span><span className="post-author-url"> @mr_whiskerson</span></p>
     )
 }
 
