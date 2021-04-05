@@ -101,8 +101,8 @@ function PostDate() {
 
 function ButtonMore() {
     return (
-        <div className="button-three-dots">
-            <IconThreeDots />
+        <div className="button-three-dots-container">
+            <IconThreeDots className="button-three-dots"/>
         </div>
     )
 }
