@@ -128,7 +128,7 @@ article {
     width: 34.75px;
     height: 34.75px;
     fill: rgb(91, 112, 131);
-    
+
     transition-duration: 0.5s;
     transition-property: background-color;
     
@@ -175,21 +175,51 @@ article {
     justify-content: space-between;
 }
 
-.post-footer-button {
-    display: flex;
-}
+
+
+
 
 .icon {
     width: 19px;
-    margin-right: .5em;
+    /* margin-right: .5em; */
 }
 
 .icon-color {
     fill: rgb(91, 112, 131);
 }
 
+
+
 .post-counter {
     margin: 0;
+    margin-left: .2em;
     font-size: 1.3rem;
     color: rgb(91, 112, 131);
 }
+
+.button-post-footer-container {
+    display: flex;
+    border: 1px solid magenta;
+}
+
+.button-post-footer {
+    margin-top: -8px;
+    width: 34.75px;
+    height: 34.75px;
+    fill: rgb(91, 112, 131);
+
+    transition-duration: 0.5s;
+    transition-property: background-color;
+    
+    border-radius: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-post-footer:hover {
+    background-color: rgba(29, 161, 242, 0.1);
+    fill: rgba(29,161,242,1.00);
+}
+
