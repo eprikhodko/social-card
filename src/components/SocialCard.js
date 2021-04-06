@@ -122,7 +122,9 @@ function PostReply() {
 function PostRetweet() {
     return (
         <div className="button-post-footer-container">
-            <IconRetweet className="icon icon-color"/>
+            <div className="button-post-footer">
+                <IconRetweet className="icon"/>
+            </div>
             <p className="post-counter">6</p>
         </div>
     )
@@ -131,7 +133,9 @@ function PostRetweet() {
 function PostLike() {
     return (
         <div className="button-post-footer-container">
-            <IconLike className="icon icon-color"/>
+            <div className="button-post-footer">
+                <IconLike className="icon"/>
+            </div>
             <p className="post-counter">24</p>
         </div>
     )
@@ -140,7 +144,9 @@ function PostLike() {
 function PostShare() {
     return (
         <div className="button-post-footer-container">
-            <IconShare className="icon icon-color"/>
+            <div className="button-post-footer">
+                <IconShare className="icon"/>
+            </div>
         </div>
     ) 
 }
