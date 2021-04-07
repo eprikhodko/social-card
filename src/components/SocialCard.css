@@ -41,6 +41,8 @@ article {
     display: flex;
     padding: 0 1em;
     margin-top: 1em;
+
+    cursor: pointer;
 }
 
 /*  ================
@@ -192,11 +194,17 @@ article {
 
 .post-counter {
     margin: 0;
-    margin-left: .2em;
+    padding-left: .2em;
+    padding-right: 1em;
     font-size: 1.3rem;
     color: rgb(91, 112, 131);
+
+    transition-duration: 0.2s;
+    transition-property: color;
 }
 
+
+/* footer buttons container */
 .button-post-footer-container {
     display: flex;
     /* border: 1px solid magenta; */
@@ -223,12 +231,29 @@ article {
     fill: rgba(29,161,242,1.00);
 }
 
-.button-retweet:hover {
+.button-post-footer-container:hover .button-reply {
+    background-color: rgba(29, 161, 242, 0.1);
+    fill: rgba(29,161,242,1.00);
+}
+
+.button-post-footer-container:hover .reply-counter {
+    color: rgba(29,161,242,1.00);
+}
+
+.button-post-footer-container:hover .retweet-counter {
+    color: rgb(23, 191, 99);
+}
+
+.button-post-footer-container:hover .like-counter {
+    color: rgb(224, 36, 94);
+}
+
+.button-post-footer-container:hover .button-retweet {
     background-color: rgba(23, 191, 99, 0.1);
     fill: rgb(23, 191, 99);
 }
 
-.button-like:hover {
+.button-post-footer-container:hover .button-like {
     background-color: rgba(224, 36, 94, 0.1);
     fill: rgb(224, 36, 94);
 }

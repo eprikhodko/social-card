@@ -113,7 +113,7 @@ function PostReply() {
             <div className="button-post-footer button-reply">
                 <IconReply className="icon"/>
             </div>
-            <p className="post-counter">25</p>
+            <p className="post-counter reply-counter">25</p>
         </div>
         
     )
@@ -125,7 +125,7 @@ function PostRetweet() {
             <div className="button-post-footer button-retweet">
                 <IconRetweet className="icon"/>
             </div>
-            <p className="post-counter">6</p>
+            <p className="post-counter retweet-counter">6</p>
         </div>
     )
 }
@@ -136,7 +136,7 @@ function PostLike() {
             <div className="button-post-footer button-like">
                 <IconLike className="icon"/>
             </div>
-            <p className="post-counter">24</p>
+            <p className="post-counter like-counter">24</p>
         </div>
     )
 }
