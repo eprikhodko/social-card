@@ -222,3 +222,13 @@ article {
     background-color: rgba(29, 161, 242, 0.1);
     fill: rgba(29,161,242,1.00);
 }
+
+.button-retweet:hover {
+    background-color: rgba(23, 191, 99, 0.1);
+    fill: rgb(23, 191, 99);
+}
+
+.button-like:hover {
+    background-color: rgba(224, 36, 94, 0.1);
+    fill: rgb(224, 36, 94);
+}
